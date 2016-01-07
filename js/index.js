@@ -10,8 +10,11 @@ for (var i = 0; i < 10; i++) {
 
 
 function ondelClick (event) {
+	$("[id='"+event.data.id+"']").css('pointer-events','none');
+	
+	
 					_my_shark.shark($("[id='"+event.data.id+"']"),function () {
-						
+					
 					$("[id='"+event.data.id+"']").addClass('userlistitemdeleted');
 					setTimeout(function () {
 						
